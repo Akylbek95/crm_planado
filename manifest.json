@@ -1,0 +1,17 @@
+{
+    "name":"CRM to  Planado",
+    "description":"By Akylbek Karagulov",
+    "version":"1.0",
+    "manifest_version":2,
+    "content_scripts":[
+        {
+            "matches":["http://10.1.9.109/index.php?module=HelpDesk&view=Detail&record=*"],
+            "js":["script.js"],
+            "run_at":"document_end"
+        }
+    ],
+    "permissions":["activeTab"],
+    "icons":{"128":"icon.png",
+            "48":"icon.png",
+            "16":"icon.png"}
+}
